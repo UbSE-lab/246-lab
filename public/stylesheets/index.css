@@ -1,0 +1,69 @@
+.admin-sign {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 360px;
+  background: var(--COL-WHITE);
+  border: 1px solid var(--COL-GRAY2);
+  border-top: 4px solid var(--COL-PRIMARY1);
+  animation: FadeIn 1s;
+  position: relative;
+}
+
+.signWrap .title {
+  margin-bottom: 12px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--COL-BLACK);
+}
+
+.signWrap .subTitle {
+  margin-bottom: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--COL-GRAY5);
+}
+
+.signWrap .inputBox {
+  margin-bottom: 8px;
+  padding: 14px 20px;
+  width: 280px;
+  border: 1px solid var(--COL-GRAY2);
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--COL-GRAY5);
+  transition: border 0.3s;
+}
+
+.signWrap .inputBox:focus {
+  border: 1px solid var(--COL-PRIMARY1);
+}
+
+.signWrap .signBtn {
+  margin-top: 8px;
+  padding: 16px 20px;
+  width: 322px;
+  background: var(--COL-PRIMARY1);
+  border: 1px solid var(--COL-PRIMARY2);
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--COL-WHITE);
+  transition: background 0.3s, border 0.3s;
+}
+
+.signWrap .signBtn:hover {
+  background: var(--COL-PRIMARY3);
+  border: 1px solid var(--COL-PRIMARY3);
+}

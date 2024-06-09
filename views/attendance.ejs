@@ -1,0 +1,74 @@
+<!-- 출석 페이지 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="favicon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="/stylesheets/attendance/attendance_setting.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/attendance/attendance.css" />
+  </head>
+
+  <body>
+    <div class="sign-page">
+      <div class="sign-component">
+        <div class="info-wrap">
+          <div class="icon">
+            <img src="https://www.dongseo.ac.kr/kr/_Img/login01.png" alt="" />
+          </div>
+          <div class="title">로그인 이용안내</div>
+          <div class="info">
+            <ul>
+              <li>가입은 관리자에게 문의해주세요.</li>
+              <li>
+                매일 밤 11시 59분 미퇴실자는 해당 날짜 출석이
+                <strong>무효</strong> 처리되니 꼭 퇴실 처리 바랍니다!!!
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sign-wrap">
+          <div class="title">연구원 출석</div>
+          <!-- <div class="subtitle">출석 현황 및 누적 경고 확인이 가능합니다.</div> -->
+          <div class="form">
+            <form action="/attendance" method="post">
+              <div class="userdata">
+                <input
+                  type="text"
+                  name="student_number"
+                  placeholder="학번을 입력하세요."
+                />
+
+                <!-- <input
+                  type="password"
+                  name="pw"
+                  placeholder="비밀번호를 입력하세요."
+                /> -->
+              </div>
+              <button type="submit">출석하기</button>
+            </form>
+            <button
+              class="check-button"
+              type="button"
+              onclick="location.href = `http://192.168.95.85:3000/NewMonitoring`"
+            >
+              출석 확인하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "1c41c5ec98acfc0";
+      if (window.wcs) {
+        wcs_do();
+      }
+    </script>
+    <script type="application/javascript" src="/javascripts/dna.js"></script>
+  </body>
+</html>

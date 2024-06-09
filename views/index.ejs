@@ -1,0 +1,38 @@
+<!-- 관리자 로그인 페이지 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>로그인</title>
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <link rel="stylesheet" href="/stylesheets/signlayout.css" />
+  </head>
+  <body>
+    <div class="admin-sign">
+      <div id="signIn" class="signWrap">
+        <div class="title">관리자 로그인</div>
+        <div class="subTitle">v1.2.0</div>
+        <form action="/login" method="post">
+          <input
+            class="inputBox"
+            type="text"
+            name="id"
+            placeholder="아이디를 입력하세요."
+          />
+          <input
+            class="inputBox"
+            type="text"
+            name="password"
+            placeholder="비밀번호를 입력하세요."
+          />
+          <button class="signBtn" type="submit">로그인</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

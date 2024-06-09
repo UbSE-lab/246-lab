@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("./Fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+
+:root {
+  --col-blue: rgb(0, 79, 255);
+  --col-sky: #4c83ff;
+  --col-light-sky: #d0ddfc;
+  --col-red: #fb3640;
+  --col-black: #17191a;
+  --col-gray-1: #464a4d;
+  --col-gray-2: #757b80;
+  --col-gray-3: #9b9d9f;
+  --col-gray-6: #f2f8fc;
+  --col-white: #ffffff;
+  --COL-PRIMARY1: #c51130;
+  --COL-PRIMARY2: #c20525;
+  --COL-PRIMARY3: #9b021d;
+  --COL-PRIMARY4: #870419;
+  --COL-PRIMARY5: #730416;
+  --COL-LIGHT: #ffffff;
+  --COL-WHITE: #fefefe;
+  --COL-GRAY1: #eeeeee;
+  --COL-GRAY2: #dddddd;
+  --COL-GRAY3: #cccccc;
+  --COL-GRAY4: #999999;
+  --COL-GRAY5: #666666;
+  --COL-GRAY6: #333333;
+  --COL-BLACK: #111111;
+  --COL-BG: #fbf9f9;
+  --content-max-width: 1240px;
+}
+
+* {
+  font-family: "Pretendard Variable";
+  white-space: -1px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+input,
+select,
+button {
+  background: var(--COL-WHITE);
+  background-color: var(--COL-WHITE);
+  cursor: pointer;
+  border-radius: 4px;
+}
