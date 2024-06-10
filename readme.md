@@ -17,7 +17,7 @@ Server Side Rendering 방식으로 구현중입니다.
 
 npm run dev
 
-포트번호 : 3000
+localhost:3000 을 통해 접속
 
 ### 구현 및 추가 설명
 
