@@ -13,6 +13,12 @@ MySql
 
 Server Side Rendering 방식으로 구현중입니다.
 
+### 실행
+
+npm run dev
+
+포트번호 : 3000
+
 ### 구현 및 추가 설명
 
 ### 구현 고민
