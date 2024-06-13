@@ -1,60 +1,59 @@
 #sideBar {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #sideBar .group {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 #sideBar .group .title {
-  margin: 0;
-  padding: 0 20px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--col-gray-2);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--col-gray-2);
 }
 
 #sideBar .group .item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-  margin: 0 24px;
-  padding: 8px 12px;
-  border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin: 0 24px;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
 #sideBar .group .item.active,
 #sideBar .group .item.active:hover {
-  background: var(--COL-PRIMARY1);
+    background: var(--COL-PRIMARY1);
 }
 
 #sideBar .group .item:hover {
-  background: var(--COL-GRAY1);
+    background: var(--COL-GRAY1);
 }
 
 #sideBar .group .item .icon,
 #sideBar .group .item .icon img {
-  width: 16px;
-  height: 16px;
-  overflow: hidden;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
 }
 
 #sideBar .group .item.active .icon img {
-  filter: invert(100%) sepia(37%) saturate(2%) hue-rotate(150deg)
-    brightness(115%) contrast(99%);
+    filter: invert(100%) sepia(37%) saturate(2%) hue-rotate(150deg) brightness(115%) contrast(99%);
 }
 
 #sideBar .group .item .text {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--col-black);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--col-black);
 }
 
 #sideBar .group .item.active .text {
-  color: var(--COL-WHITE);
+    color: var(--COL-WHITE);
 }

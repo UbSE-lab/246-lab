@@ -1,36 +1,36 @@
 .btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 20px;
-  background: var(--COL-PRIMARY1);
-  border: 1px solid var(--COL-PRIMARY2);
-  outline: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--col-white);
-  transition: background 0.3s, border 0.3s;
-  cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--COL-PRIMARY1);
+    border: 1px solid var(--COL-PRIMARY2);
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--col-white);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover {
-  background: var(--COL-PRIMARY3);
-  border: 1px solid var(--COL-PRIMARY3);
+    background: var(--COL-PRIMARY3);
+    border: 1px solid var(--COL-PRIMARY3);
 }
 
 .btn-sm {
-  padding: 8px 16px;
-  cursor: pointer;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 
 .btn.light {
-  background: var(--COL-GRAY1);
-  border: 1px solid var(--COL-GRAY2);
-  color: var(--COL-GRAY6);
+    background: var(--COL-GRAY1);
+    border: 1px solid var(--COL-GRAY2);
+    color: var(--COL-GRAY6);
 }
 
 .btn.light:hover {
-  background: var(--COL-GRAY2);
-  border: 1px solid var(--COL-GRAY2);
+    background: var(--COL-GRAY2);
+    border: 1px solid var(--COL-GRAY2);
 }
