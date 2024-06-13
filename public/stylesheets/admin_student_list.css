@@ -1,513 +1,510 @@
 #studentList,
 #studentAlertList {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 20px;
-  width: calc(100% - 40px);
-  max-width: calc(100% - 40px);
-  height: 100%;
-  animation: FadeIn 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    height: 100%;
+    animation: FadeIn 1s;
+    background-color: var(--COL-BG);
 }
 
 #studentList .headerWrap,
 #studentAlertList .headerWrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #studentList .headerWrap .title,
 #studentAlertList .headerWrap .title {
-  font-weight: 700;
-  font-size: 28px;
-  color: var(--COL-BLACK);
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--COL-BLACK);
 }
 
 #studentList .headerWrap .fucnWrap {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 }
 
 #studentList .headerWrap .fucnWrap select {
-  padding: 0 12px;
-  width: 120px;
-  background: var(--COL-WHITE) url("../images/iconDownArrow.png") no-repeat 95%
-    50%;
-  border: 1px solid var(--COL-GRAY2);
-  outline: none;
-  transition: border 0.3s;
-  appearance: none;
-  -webkit-appearance: none;
+    padding: 0 12px;
+    width: 120px;
+    background: var(--COL-WHITE) url("../images/iconDownArrow.png") no-repeat 95% 50%;
+    border: 1px solid var(--COL-GRAY2);
+    outline: none;
+    transition: border 0.3s;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 #studentList .headerWrap .fucnWrap select:hover {
-  border: 1px solid var(--COL-PRIMARY1);
-  background: var(--COL-WHITE) url("../images/iconDownArrowFocus.png") no-repeat
-    95% 50%;
+    border: 1px solid var(--COL-PRIMARY1);
+    background: var(--COL-WHITE) url("../images/iconDownArrowFocus.png") no-repeat 95% 50%;
 }
 
 #studentList .bodyWrap,
 #studentAlertList .bodyWrap {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #studentList .bodyWrap .listWrap {
-  display: flex;
-  flex-direction: column;
-  background: var(--COL-WHITE);
-  border: 1px solid var(--COL-GRAY2);
-  border-top: 4px solid var(--COL-PRIMARY2);
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--COL-WHITE);
+    border: 1px solid var(--COL-GRAY2);
+    border-top: 4px solid var(--COL-PRIMARY2);
+    width: 100%;
 }
 
 #studentList .bodyWrap .listWrap .indexWrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border-bottom: 1px solid var(--COL-GRAY2);
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid var(--COL-GRAY2);
+    text-align: center;
 }
 
 #studentList .bodyWrap .listWrap .indexWrap .index {
-  padding: 8px 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--COL-PRIMARY3);
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--COL-PRIMARY3);
 }
 
 #studentList .bodyWrap .listWrap .itemWrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border-bottom: 1px solid var(--COL-GRAY2);
-  text-align: center;
-  animation: FadeIn 1s;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid var(--COL-GRAY2);
+    text-align: center;
+    animation: FadeIn 1s;
 }
 
 #studentList .bodyWrap .listWrap .itemWrap:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 #studentList .bodyWrap .listWrap .itemWrap .item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 0;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--COL-BLACK);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--COL-BLACK);
 }
 
 #studentList .bodyWrap .listWrap .studentId {
-  flex: 2;
-  border-right: 1px solid var(--COL-GRAY2);
+    flex: 2;
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 #studentList .bodyWrap .listWrap .name {
-  flex: 1.5;
-  border-right: 1px solid var(--COL-GRAY2);
+    flex: 1.5;
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 #studentList .bodyWrap .listWrap .lab {
-  flex: 1.5;
-  border-right: 1px solid var(--COL-GRAY2);
+    flex: 1.5;
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 #studentList .bodyWrap .listWrap .seat {
-  flex: 1.5;
-  border-right: 1px solid var(--COL-GRAY2);
+    flex: 1.5;
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 #studentList .bodyWrap .listWrap .alert {
-  flex: 1;
-  border-right: 1px solid var(--COL-GRAY2);
+    flex: 1;
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 #studentList .bodyWrap .listWrap .state {
-  flex: 1.5;
-  border-right: 1px solid var(--COL-GRAY2);
+    flex: 1.5;
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 #studentList .bodyWrap .listWrap .update {
-  width: 68px;
-  border-right: 1px solid var(--COL-GRAY2);
+    width: 68px;
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 #studentList .bodyWrap .listWrap .delete {
-  width: 68px;
+    width: 68px;
 }
 
 #noItemWrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  min-height: 320px;
-  color: var(--COL-GRAY4);
-  animation: FadeIn 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 320px;
+    color: var(--COL-GRAY4);
+    animation: FadeIn 1s;
 }
 
 #loadItemWrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 320px;
 }
 
 #loadItemWrap .barWrap {
-  display: block;
-  position: relative;
-  width: 240px;
-  height: 8px;
-  background: rgba(197, 17, 48, 0.3);
-  overflow: hidden;
+    display: block;
+    position: relative;
+    width: 240px;
+    height: 8px;
+    background: rgba(197, 17, 48, 0.3);
+    overflow: hidden;
 }
 
 #loadItemWrap .barWrap .bar {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 120px;
-  height: 8px;
-  background: rgba(197, 17, 48, 0.75);
-  animation: Loading 1.5s infinite;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 120px;
+    height: 8px;
+    background: rgba(197, 17, 48, 0.75);
+    animation: Loading 1.5s infinite;
 }
 
 @keyframes Loading {
-  0% {
-    background: rgba(197, 17, 48, 0);
-    left: -100%;
-    width: 80px;
-  }
+    0% {
+        background: rgba(197, 17, 48, 0);
+        left: -100%;
+        width: 80px;
+    }
 
-  50% {
-    background: rgba(197, 17, 48, 0.75);
-    width: 160px;
-  }
+    50% {
+        background: rgba(197, 17, 48, 0.75);
+        width: 160px;
+    }
 
-  100% {
-    background: rgba(197, 17, 48, 0);
-    left: 100%;
-    width: 80px;
-  }
+    100% {
+        background: rgba(197, 17, 48, 0);
+        left: 100%;
+        width: 80px;
+    }
 }
 
 .popUpWrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
 }
 
 .popUpWrap .popUpContentWrap {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 20px;
-  width: 400px;
-  background: var(--COL-WHITE);
-  border: 1px solid var(--COL-GRAY2);
-  border-top: 4px solid var(--COL-PRIMARY2);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    width: 400px;
+    background: var(--COL-WHITE);
+    border: 1px solid var(--COL-GRAY2);
+    border-top: 4px solid var(--COL-PRIMARY2);
 }
 
 .popUpWrap .popUpContentWrap .popUpHeaderWrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 8px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--COL-GRAY3);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--COL-GRAY3);
 }
 
 .popUpWrap .popUpContentWrap .popUpHeaderWrap .icon {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .popUpWrap .popUpContentWrap .popUpHeaderWrap .title {
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--COL-PRIMARY3);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--COL-PRIMARY3);
 }
 
 .popUpWrap .popUpContentWrap .popUpBodyWrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .popUpWrap .popUpContentWrap .popUpBodyWrap .target {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--COL-BLACK);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--COL-BLACK);
 }
 
 .popUpWrap .popUpContentWrap .popUpFooterWrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
 }
 
 .popUpWrap .popUpContentWrap .popUpCancelBtn {
-  padding: 12px 20px;
-  background: var(--COL-WHITE);
-  border: 1px solid var(--COL-WHITE);
-  outline: none;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--COL-GRAY5);
-  transition: background 0.3s, border 0.3s, color 0.3s;
-  cursor: pointer;
+    padding: 12px 20px;
+    background: var(--COL-WHITE);
+    border: 1px solid var(--COL-WHITE);
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--COL-GRAY5);
+    transition: background 0.3s, border 0.3s, color 0.3s;
+    cursor: pointer;
 }
 
 .popUpWrap .popUpContentWrap .popUpCancelBtn:hover {
-  background: var(--COL-GRAY1);
-  border: 1px solid var(--COL-GRAY1);
-  color: var(--COL-BLACK);
+    background: var(--COL-GRAY1);
+    border: 1px solid var(--COL-GRAY1);
+    color: var(--COL-BLACK);
 }
 
 .popUpWrap .popUpContentWrap .popUpApplyBtn {
-  padding: 12px 20px;
-  background: var(--COL-PRIMARY1);
-  border: 1px solid var(--COL-PRIMARY2);
-  outline: none;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--COL-WHITE);
-  transition: background 0.3s, border 0.3s;
-  cursor: pointer;
+    padding: 12px 20px;
+    background: var(--COL-PRIMARY1);
+    border: 1px solid var(--COL-PRIMARY2);
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--COL-WHITE);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;
 }
 
 .popUpWrap .popUpContentWrap .popUpApplyBtn:hover {
-  background: var(--COL-PRIMARY3);
-  border: 1px solid var(--COL-PRIMARY3);
+    background: var(--COL-PRIMARY3);
+    border: 1px solid var(--COL-PRIMARY3);
 }
 
 .inputBox {
-  margin-bottom: 8px;
-  padding: 14px 20px;
-  width: calc(100% - 40px);
-  border: 1px solid var(--COL-GRAY2);
-  outline: none;
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--COL-GRAY5);
-  transition: border 0.3s;
+    margin-bottom: 8px;
+    padding: 14px 20px;
+    width: calc(100% - 40px);
+    border: 1px solid var(--COL-GRAY2);
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--COL-GRAY5);
+    transition: border 0.3s;
 }
 
 .inputBox:focus {
-  border: 1px solid var(--COL-PRIMARY1);
+    border: 1px solid var(--COL-PRIMARY1);
 }
 
 .selectBox {
-  margin-bottom: 8px;
-  padding: 14px 20px;
-  width: 100%;
-  background: var(--COL-WHITE) url("../images/iconDownArrow.png") no-repeat 95%
-    50%;
-  border: 1px solid var(--COL-GRAY2);
-  outline: none;
-  transition: border 0.3s;
-  appearance: none;
-  -webkit-appearance: none;
+    margin-bottom: 8px;
+    padding: 14px 20px;
+    width: 100%;
+    background: var(--COL-WHITE) url("../images/iconDownArrow.png") no-repeat 95% 50%;
+    border: 1px solid var(--COL-GRAY2);
+    outline: none;
+    transition: border 0.3s;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .selectBox:hover {
-  border: 1px solid var(--COL-PRIMARY1);
-  background: var(--COL-WHITE) url("../images/iconDownArrowFocus.png") no-repeat
-    95% 50%;
+    border: 1px solid var(--COL-PRIMARY1);
+    background: var(--COL-WHITE) url("../images/iconDownArrowFocus.png") no-repeat 95% 50%;
 }
 
 #studentAlertList .bodyWrap .listWrap {
-  display: grid;
-  row-gap: 16px;
-  column-gap: 16px;
-  padding: 24px;
-  width: calc(100% - 48px);
-  background: var(--COL-WHITE);
-  border: 1px solid var(--COL-GRAY2);
-  border-top: 4px solid var(--COL-PRIMARY2);
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    padding: 24px;
+    width: calc(100% - 48px);
+    background: var(--COL-WHITE);
+    border: 1px solid var(--COL-GRAY2);
+    border-top: 4px solid var(--COL-PRIMARY2);
 }
 
 @media screen and (min-width: 1920px) {
-  #studentAlertList .bodyWrap .listWrap {
-    grid-template-columns: repeat(7, 1fr);
-  }
+    #studentAlertList .bodyWrap .listWrap {
+        grid-template-columns: repeat(7, 1fr);
+    }
 }
 
 @media screen and (max-width: 1920px) {
-  #studentAlertList .bodyWrap .listWrap {
-    grid-template-columns: repeat(6, 1fr);
-  }
+    #studentAlertList .bodyWrap .listWrap {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 @media screen and (max-width: 1600px) {
-  #studentAlertList .bodyWrap .listWrap {
-    grid-template-columns: repeat(5, 1fr);
-  }
+    #studentAlertList .bodyWrap .listWrap {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 @media screen and (max-width: 1200px) {
-  #studentAlertList .bodyWrap .listWrap {
-    grid-template-columns: repeat(4, 1fr);
-  }
+    #studentAlertList .bodyWrap .listWrap {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media screen and (max-width: 960px) {
-  #studentAlertList .bodyWrap .listWrap {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    #studentAlertList .bodyWrap .listWrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 #studentAlertList .bodyWrap .listWrap .itemWrap {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  width: calc(100% - 32px);
-  border: 1px solid var(--COL-GRAY3);
-  gap: 6px;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--COL-GRAY6);
-  cursor: pointer;
-  animation: FadeIn 1s;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: calc(100% - 32px);
+    border: 1px solid var(--COL-GRAY3);
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--COL-GRAY6);
+    cursor: pointer;
+    animation: FadeIn 1s;
 }
 
 #studentAlertList .bodyWrap .listWrap .colSpan {
-  grid-column: 1 / -1;
+    grid-column: 1 / -1;
 }
 
 #studentAlertList .bodyWrap .listWrap .itemWrap:hover {
-  background: var(--COL-GRAY1);
+    background: var(--COL-GRAY1);
 }
 
 #studentAlertList .bodyWrap .listWrap .itemWrap strong {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--COL-BLACK);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--COL-BLACK);
 }
 
 #studentAlertList .bodyWrap .listWrap .itemWrap .alert strong {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--COL-PRIMARY3);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--COL-PRIMARY3);
 }
 
 .alertPopUp {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  width: 480px;
-  background: var(--COL-WHITE);
-  border: 1px solid var(--COL-GRAY2);
-  border-top: 4px solid var(--COL-PRIMARY1);
-  gap: 20px;
-  animation: FadeIn 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 480px;
+    background: var(--COL-WHITE);
+    border: 1px solid var(--COL-GRAY2);
+    border-top: 4px solid var(--COL-PRIMARY1);
+    gap: 20px;
+    animation: FadeIn 0.5s;
 }
 
 .alertPopUp .alertPopUpHeader {
-  width: 100%;
+    width: 100%;
 }
 
 .alertPopUp .alertPopUpHeader table {
-  width: 100%;
-  border-spacing: 0px;
+    width: 100%;
+    border-spacing: 0px;
 }
 
 .alertPopUp .alertPopUpHeader table tr {
-  width: 100%;
+    width: 100%;
 }
 
 .alertPopUp .alertPopUpHeader table tr .th {
-  font-weight: 600;
-  color: var(--COL-GRAY6);
-  text-align: center;
+    font-weight: 600;
+    color: var(--COL-GRAY6);
+    text-align: center;
 }
 
 .alertPopUp .alertPopUpHeader table tr td {
-  padding: 12px 8px;
-  border: 1px solid var(--COL-GRAY2);
-  border-right: none;
-  border-bottom: none;
+    padding: 12px 8px;
+    border: 1px solid var(--COL-GRAY2);
+    border-right: none;
+    border-bottom: none;
 }
 
 .alertPopUp .alertPopUpHeader table tr td:last-child {
-  border-right: 1px solid var(--COL-GRAY2);
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 .alertPopUp .alertPopUpHeader table tr:last-child td {
-  border-bottom: 1px solid var(--COL-GRAY2);
+    border-bottom: 1px solid var(--COL-GRAY2);
 }
 
 .alertPopUp .alertPopUpBody {
-  width: 100%;
+    width: 100%;
 }
 
 .alertPopUp .alertPopUpBody span {
-  animation: FadeIn 1s;
+    animation: FadeIn 1s;
 }
 
 .alertPopUp .alertPopUpBody table {
-  width: 100%;
-  border-spacing: 0px;
-  animation: FadeIn 1s;
+    width: 100%;
+    border-spacing: 0px;
+    animation: FadeIn 1s;
 }
 
 .alertPopUp .alertPopUpBody table tr {
-  width: 100%;
+    width: 100%;
 }
 
 .alertPopUp .alertPopUpBody table th {
-  font-weight: 600;
-  color: var(--COL-GRAY6);
+    font-weight: 600;
+    color: var(--COL-GRAY6);
 }
 
 .alertPopUp .alertPopUpBody table tr th,
 .alertPopUp .alertPopUpBody table tr td {
-  padding: 12px 8px;
-  border: 1px solid var(--COL-GRAY2);
-  border-right: none;
-  border-bottom: none;
-  text-align: center;
+    padding: 12px 8px;
+    border: 1px solid var(--COL-GRAY2);
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
 }
 
 .alertPopUp .alertPopUpBody table tr th:last-child,
 .alertPopUp .alertPopUpBody table tr td:last-child {
-  border-right: 1px solid var(--COL-GRAY2);
+    border-right: 1px solid var(--COL-GRAY2);
 }
 
 .alertPopUp .alertPopUpBody table tr:last-child td {
-  border-bottom: 1px solid var(--COL-GRAY2);
+    border-bottom: 1px solid var(--COL-GRAY2);
 }
 
 .alertPopUp .alertPopUpFooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  width: 100%;
-  gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    gap: 8px;
 }
