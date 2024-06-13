@@ -34,7 +34,7 @@
 #studentList .headerWrap .fucnWrap select {
   padding: 0 12px;
   width: 120px;
-  background: var(--COL-WHITE) url(../../Images/iconDownArrow.png) no-repeat 95%
+  background: var(--COL-WHITE) url("../images/iconDownArrow.png") no-repeat 95%
     50%;
   border: 1px solid var(--COL-GRAY2);
   outline: none;
@@ -45,8 +45,8 @@
 
 #studentList .headerWrap .fucnWrap select:hover {
   border: 1px solid var(--COL-PRIMARY1);
-  background: var(--COL-WHITE) url(../../Images/iconDownArrowFocus.png)
-    no-repeat 95% 50%;
+  background: var(--COL-WHITE) url("../images/iconDownArrowFocus.png") no-repeat
+    95% 50%;
 }
 
 #studentList .bodyWrap,
@@ -327,7 +327,7 @@
   margin-bottom: 8px;
   padding: 14px 20px;
   width: 100%;
-  background: var(--COL-WHITE) url(../../Images/iconDownArrow.png) no-repeat 95%
+  background: var(--COL-WHITE) url("../images/iconDownArrow.png") no-repeat 95%
     50%;
   border: 1px solid var(--COL-GRAY2);
   outline: none;
@@ -338,8 +338,8 @@
 
 .selectBox:hover {
   border: 1px solid var(--COL-PRIMARY1);
-  background: var(--COL-WHITE) url(../../Images/iconDownArrowFocus.png)
-    no-repeat 95% 50%;
+  background: var(--COL-WHITE) url("../images/iconDownArrowFocus.png") no-repeat
+    95% 50%;
 }
 
 #studentAlertList .bodyWrap .listWrap {

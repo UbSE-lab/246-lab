@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
     <link rel="stylesheet" href="/stylesheets/root.css" />
     <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
   </head>
   <body>
     <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
       <div id="layoutWrap">
         <div class="sideWrap"><%- include ('sidebar') %></div>
 
         <div id="contentWrap">
           <div id="studentList">
-            <div class="headerWrap">
-              <div class="title">연구원 목록(0명)</div>
-              <div class="fucnWrap">
-                <select>
-                  <option selected value="all">전체</option>
-                  <option value="able">사용</option>
-                  <option value="disable">미사용</option>
-                </select>
-                <button class="btn">연구원추가</button>
-              </div>
+            <div class="title">연구원 목록(0명)</div>
+            <div class="fucnWrap">
+              <select>
+                <option selected value="all">전체</option>
+                <option value="able">사용</option>
+                <option value="disable">미사용</option>
+              </select>
+              <button class="btn">연구원추가</button>
             </div>
             <div class="bodyWrap">
               <div class="listWrap">

@@ -4,8 +4,26 @@ import path from "path";
 const cookieParser = require("cookie-parser");
 const schedule = require("node-schedule");
 
+const session = require("express-session");
+
 const app = express();
 
+/**
+ * Session
+ *
+ */
+
+app.use(
+  session({
+    secret: "45678()(*&*&",
+    resave: false,
+    saveUninitialized: true,
+    cookie: { user_id: "" },
+  })
+);
+/**
+ * --------------------------
+ */
 // db
 const pool = require("./db/db");
 

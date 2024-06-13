@@ -4,6 +4,11 @@ const router = express.Router();
 
 const pool = require("../db/db");
 
+interface AdminValue {
+  id: number;
+  password: string;
+}
+
 /**
  * 관리자 로그인
  * 작성날짜 : 2024-05-26
@@ -31,11 +36,14 @@ router.post(
     res: express.Response,
     next: express.NextFunction
   ) => {
-    const { id, password } = req.body;
+    const data: AdminValue = { id: req.body.id, password: req.body.password };
+    // const { id, password } = req.body;
+
     console.log("관리자 로그인: ", req.body);
+
     const response = await pool.query(
       "select * from admin where id = ? and password = ?",
-      [id, password]
+      [data.id, data.password]
     );
     console.log("response: ", response[0]);
     if (response[0].length != 0) {

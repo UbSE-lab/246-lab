@@ -13,25 +13,27 @@
     <link rel="stylesheet" href="/stylesheets/signlayout.css" />
   </head>
   <body>
-    <div class="admin-sign">
-      <div id="signIn" class="signWrap">
-        <div class="title">관리자 로그인</div>
-        <div class="subTitle">v1.2.0</div>
-        <form action="/login" method="post">
-          <input
-            class="inputBox"
-            type="text"
-            name="id"
-            placeholder="아이디를 입력하세요."
-          />
-          <input
-            class="inputBox"
-            type="text"
-            name="password"
-            placeholder="비밀번호를 입력하세요."
-          />
-          <button class="signBtn" type="submit">로그인</button>
-        </form>
+    <div id="signLayout">
+      <div class="admin-sign">
+        <div id="signIn" class="signWrap">
+          <div class="title">관리자 로그인</div>
+          <div class="subTitle">v1.2.0</div>
+          <form action="/login" method="post">
+            <input
+              class="inputBox"
+              type="text"
+              name="id"
+              placeholder="아이디를 입력하세요."
+            />
+            <input
+              class="inputBox"
+              type="password"
+              name="password"
+              placeholder="비밀번호를 입력하세요."
+            />
+            <button class="signBtn" type="submit">로그인</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>

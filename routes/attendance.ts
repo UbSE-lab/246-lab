@@ -21,6 +21,10 @@ router.get(
   }
 );
 
+interface studentValue {
+  student_number: number;
+}
+
 // 출석 기능
 router.post(
   "/attendance",
@@ -29,15 +33,21 @@ router.post(
     res: express.Response,
     next: express.NextFunction
   ) => {
-    const { student_number } = req.body;
+    // const { student_number } = req.body;
+    const data: studentValue = { student_number: req.body.student_number };
 
-    if (
-      student_number == undefined ||
-      student_number == null ||
-      student_number == "" ||
-      student_number.length < 8 ||
-      student_number.length > 8
-    ) {
+    // if (
+    //   student_number == undefined ||
+    //   student_number == null ||
+    //   student_number == "" ||
+    //   student_number.length < 8 ||
+    //   student_number.length > 8
+    // ) {
+    //   return res.send(
+    //     `<script type = "text/javascript">alert("학번을 확인해주세요."); window.history.back();</script>`
+    //   );
+    // }
+    if (data.student_number) {
       return res.send(
         `<script type = "text/javascript">alert("학번을 확인해주세요."); window.history.back();</script>`
       );
@@ -45,7 +55,7 @@ router.post(
 
     const attendance_already_check = await pool.query(
       "select liveOn from lab2.student where studentId = ?",
-      [student_number]
+      [data.student_number]
     );
 
     console.log("!!!", attendance_already_check[0][0].liveOn);
@@ -59,16 +69,16 @@ router.post(
     if (attendance_already_check[0][0].liveOn == 0) {
       const update_live_on = await pool.query(
         "update lab2.student set liveOn = 1 where studentId = ?",
-        [student_number]
+        [data.student_number]
       );
-      console.log("입실처리:", student_number);
+      console.log("입실처리:", data.student_number);
       return res.send(
         `<script type = "text/javascript">alert("입실처리 되었습니다."); location.href = "/attendance";</script>`
       );
     } else if (attendance_already_check[0][0].liveOn != 0) {
       const update_live_on = await pool.query(
         "update lab2.student set liveOn = 0 where studentId = ?",
-        [student_number]
+        [data.student_number]
       );
       return res.send(
         `<script type = "text/javascript">alert("퇴실처리 되었습니다."); location.href = "/attendance";</script>`
