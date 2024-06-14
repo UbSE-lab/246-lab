@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
+
+          <div id="contentWrap">
+           <div id="studentAlertList">
+            <div class="headerWrap">
+              <div class="title">경고 목록</div>
+            </div>
+            <div class="bodyWrap">
+              <div class="listWrap">
+                <!-- 이 부분은 동적으로 생성된 내용이 들어갑니다 -->
+                <div class="itemWrap">
+                  <div class="studentId">
+                    학번 <strong></strong>
+                  </div>
+                  <div class="name">
+                    이름 <strong></strong>
+                  </div>
+                  <div class="alert">
+                    누적 경고 횟수 <strong>회</strong>
+                  </div>
+                </div>
+                <!-- 로딩 중일 때 표시되는 내용 -->
+                <div class="colSpan">
+                  <!-- LoadItem 컴포넌트 내용 -->
+                </div>
+              </div>
+            </div>
+            <!-- 팝업이 표시되는 부분 -->
+            <div class="popup">
+              <!-- PopUp 컴포넌트 내용 -->
+            </div>
+          </div>
+          
+           </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

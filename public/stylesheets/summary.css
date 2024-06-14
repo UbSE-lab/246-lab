@@ -1,0 +1,129 @@
+#summary {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+
+#summary .sectionWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+#summary .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  flex: 1;
+  padding: 16px 24px 24px 24px;
+  height: 160px;
+  background: var(--COL-WHITE);
+  border: 1px solid var(--COL-GRAY2);
+}
+
+#summary .back-button {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1240px) {
+  #summary .sectionWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+  }
+
+  #summary .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    width: calc(100% - 48px);
+    padding: 16px 24px 24px 24px;
+    height: 160px;
+    background: var(--COL-WHITE);
+    border: 1px solid var(--COL-GRAY2);
+  }
+}
+
+#summary .section.section-lg {
+  height: 640px;
+}
+
+#summary .section .sectionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#summary .section .sectionHeader .sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--COL-GRAY6);
+}
+
+#summary .section .sectionHeader .linkBtn {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+#summary .section:hover .sectionHeader .linkBtn {
+  opacity: 1;
+}
+
+#summary .section .sectionHeader .linkBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+#summary .section .sectionBody {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+#summary .section .sectionBody .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--COL-GRAY3);
+}
+
+#summary .section .sectionBody .item .value {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--COL-PRIMARY1);
+}
+
+#summary .section .sectionBody .item .key {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid var(--COL-GRAY3);
+  font-weight: 500;
+  color: var(--COL-GRAY6);
+}

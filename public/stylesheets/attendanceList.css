@@ -1,0 +1,514 @@
+#attendanceList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  height: 100%;
+  background: var(--COL-BG);
+  animation: FadeIn 1s;
+}
+
+#attendanceList .headerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#attendanceList .headerWrap .title {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--COL-BLACK);
+}
+
+#attendanceList .headerWrap .funcWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+#attendanceList .headerWrap .funcWrap input {
+  padding: 0 12px;
+  width: 120px;
+  height: 41px;
+  border: 1px solid var(--COL-GRAY2);
+  outline: none;
+  transition: border 0.3s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#attendanceList .headerWrap .funcWrap input:hover {
+  border: 1px solid var(--COL-PRIMARY1);
+}
+
+#attendanceList .headerWrap .funcWrap select {
+  padding: 0 12px;
+  width: 200px;
+  height: 43px;
+  background: var(--COL-WHITE) url(../../Images/iconDownArrow.png) no-repeat 95%
+    50%;
+  border: 1px solid var(--COL-GRAY2);
+  outline: none;
+  transition: border 0.3s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#attendanceList .headerWrap .funcWrap select.sm {
+  padding: 0 12px;
+  width: 80px;
+  height: 43px;
+  background: var(--COL-WHITE) url(../../Images/iconDownArrow.png) no-repeat 95%
+    50%;
+  border: 1px solid var(--COL-GRAY2);
+  outline: none;
+  transition: border 0.3s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#attendanceList .headerWrap .funcWrap select:hover {
+  border: 1px solid var(--COL-PRIMARY1);
+  background: url(../../Images/iconDownArrowFocus.png) no-repeat 95% 50%;
+}
+
+#attendanceList .bodyWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  background: var(--COL-WHITE);
+}
+
+#attendanceList .bodyWrap .listWrap {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--COL-GRAY2);
+  border-top: 4px solid var(--COL-PRIMARY2);
+  width: 100%;
+  max-width: 100%;
+  overflow: scroll;
+}
+
+#attendanceList .bodyWrap .listWrap::-webkit-scrollbar {
+  width: 0px;
+  height: 1px;
+}
+
+#attendanceList .bodyWrap .listWrap::-webkit-scrollbar-thumb {
+  background: var(--COL-GRAY4);
+}
+
+#attendanceList .bodyWrap .listWrap::-webkit-scrollbar-track {
+  background: var(--COL-GRAY1);
+}
+
+#attendanceList .bodyWrap .listWrap .indexWrap {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  width: fit-content;
+  border-bottom: 1px solid var(--COL-GRAY2);
+  text-align: center;
+}
+
+#attendanceList .bodyWrap .listWrap .indexWrap .index {
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--COL-PRIMARY3);
+}
+
+#attendanceList .bodyWrap .listWrap .itemWrap {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  width: fit-content;
+  border-bottom: 1px solid var(--COL-GRAY2);
+  text-align: center;
+  animation: FadeIn 1s;
+}
+
+#attendanceList .bodyWrap .listWrap .itemWrap:last-child {
+  border-bottom: none;
+}
+
+#attendanceList .bodyWrap .listWrap .itemWrap .colWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#attendanceList .bodyWrap .listWrap .itemWrap .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--COL-BLACK);
+}
+
+#attendanceList .bodyWrap .listWrap .itemWrap .item.studentId,
+#attendanceList .bodyWrap .listWrap .itemWrap .item.name {
+  font-weight: 500;
+}
+
+#attendanceList .bodyWrap .listWrap .studentId {
+  width: 120px;
+  border-right: 1px solid var(--COL-GRAY2);
+  z-index: 1;
+}
+
+#attendanceList .bodyWrap .listWrap .name {
+  width: 96px;
+  border-right: 1px solid var(--COL-GRAY2);
+  z-index: 1;
+}
+
+#attendanceList .bodyWrap .listWrap .date {
+  width: 140px;
+  border-right: 1px solid var(--COL-GRAY2);
+}
+
+#attendanceList .bodyWrap .listWrap .date strong {
+  color: var(--COL-PRIMARY3);
+  font-weight: 600;
+}
+
+#attendanceList .bodyWrap .listWrap .no {
+  width: 64px;
+  border-right: 1px solid var(--COL-GRAY2);
+}
+
+#attendanceList .bodyWrap .listWrap .time {
+  flex: 1;
+  border-right: 1px solid var(--COL-GRAY2);
+}
+
+#attendanceList .bodyWrap .listWrap .check {
+  flex: 1;
+}
+
+#attendanceList .bodyWrap .calendarWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#attendanceList .bodyWrap .calendarHeader {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1px solid var(--COL-GRAY2);
+  border-top: 4px solid var(--COL-PRIMARY2);
+  width: 100%;
+  max-width: 100%;
+  overflow: scroll;
+}
+
+#attendanceList .bodyWrap .calendarHeader span {
+  padding: 4px 0;
+  text-align: center;
+  color: var(--COL-PRIMARY1);
+  font-weight: 600;
+}
+
+#attendanceList .bodyWrap .calendarBody {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 20px;
+  background: var(--COL-GRAY1);
+  border: 1px solid var(--COL-GRAY2);
+  border-top: none;
+  width: 100%;
+  max-width: 100%;
+  overflow: scroll;
+}
+
+#attendanceList .bodyWrap .calendarWrap .dateWrap {
+  min-height: 120px;
+  background: var(--COL-WHITE);
+  border: 1px solid var(--COL-GRAY2);
+}
+
+#attendanceList .bodyWrap .calendarWrap .dummyDate {
+  min-height: 120px;
+}
+
+#attendanceList .bodyWrap .calendarWrap .dateWrap .dateNum {
+  margin-bottom: 6px;
+  padding: 8px;
+  border-bottom: 1px solid var(--COL-GRAY2);
+  color: var(--COL-BLACK);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#attendanceList .bodyWrap .calendarWrap .dateWrap .dateInfoWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#attendanceList .bodyWrap .calendarWrap .dateWrap .dateInfoWrap .dateInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+}
+
+#attendanceList
+  .bodyWrap
+  .calendarWrap
+  .dateWrap
+  .dateInfoWrap
+  .dateInfo:last-child {
+  margin-bottom: 6px;
+}
+
+#attendanceList
+  .bodyWrap
+  .calendarWrap
+  .dateWrap
+  .dateInfoWrap
+  .dateInfo
+  .name {
+  display: inline-block;
+  width: 44px;
+  color: var(--COL-BLACK);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#attendanceList
+  .bodyWrap
+  .calendarWrap
+  .dateWrap
+  .dateInfoWrap
+  .dateInfo
+  .time {
+  display: inline-block;
+  color: var(--COL-GRAY6);
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#attendanceList
+  .bodyWrap
+  .calendarWrap
+  .dateWrap
+  .dateInfoWrap
+  .dateInfo
+  .time.satisfy {
+  color: var(--COL-PRIMARY1);
+  font-weight: 500;
+}
+
+#attendanceList
+  .bodyWrap
+  .calendarWrap
+  .dateWrap
+  .dateInfoWrap
+  .dateInfo
+  .time.unsatisfy {
+  color: var(--COL-GRAY3);
+  font-weight: 400;
+}
+
+#attendanceList .bodyWrap .weeklyWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  padding-top: 0;
+  border: 1px solid var(--COL-GRAY2);
+  border-top: 4px solid var(--COL-PRIMARY2);
+  width: calc(100% - 48px);
+  max-width: 100%;
+  gap: 8px;
+  animation: FadeIn 1s;
+}
+
+#attendanceList .bodyWrap .weeklyWrap .weeklyHeader {
+  animation: FadeIn 1s;
+}
+
+#attendanceList .bodyWrap .weeklyWrap .weeklyBody {
+  display: grid;
+  row-gap: 16px;
+  column-gap: 16px;
+  animation: FadeIn 1s;
+}
+
+@media screen and (min-width: 1920px) {
+  #attendanceList .bodyWrap .weeklyWrap .weeklyBody {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  #attendanceList .bodyWrap .weeklyWrap .weeklyBody {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #attendanceList .bodyWrap .weeklyWrap .weeklyBody {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #attendanceList .bodyWrap .weeklyWrap .weeklyBody {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #attendanceList .bodyWrap .weeklyWrap .weeklyBody {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#attendanceList .bodyWrap .weeklyWrap .weeklyBody .weeklyItem {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: calc(100% - 32px);
+  border: 1px solid var(--COL-GRAY3);
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--COL-GRAY6);
+  cursor: pointer;
+}
+
+#attendanceList .bodyWrap .weeklyWrap .weeklyBody .weeklyItem:hover {
+  background: var(--COL-GRAY1);
+}
+
+#attendanceList .bodyWrap .weeklyWrap .weeklyBody .weeklyItem strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--COL-BLACK);
+}
+
+#attendanceList .bodyWrap .weeklyWrap .weeklyBody .weeklyItem .time strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--COL-PRIMARY3);
+}
+
+.popUpWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+.weeklyPopUp {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 480px;
+  background: var(--COL-WHITE);
+  border: 1px solid var(--COL-GRAY2);
+  border-top: 4px solid var(--COL-PRIMARY1);
+  gap: 20px;
+  animation: FadeIn 0.5s;
+}
+
+.weeklyPopUp .weeklyPopUpHeader {
+  width: 100%;
+}
+
+.weeklyPopUp .weeklyPopUpHeader table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+.weeklyPopUp .weeklyPopUpHeader table tr {
+  width: 100%;
+}
+
+.weeklyPopUp .weeklyPopUpHeader table tr .th {
+  font-weight: 600;
+  color: var(--COL-GRAY6);
+  text-align: center;
+}
+
+.weeklyPopUp .weeklyPopUpHeader table tr td {
+  padding: 12px 8px;
+  border: 1px solid var(--COL-GRAY2);
+  border-right: none;
+  border-bottom: none;
+}
+
+.weeklyPopUp .weeklyPopUpHeader table tr td:last-child {
+  border-right: 1px solid var(--COL-GRAY2);
+}
+
+.weeklyPopUp .weeklyPopUpHeader table tr:last-child td {
+  border-bottom: 1px solid var(--COL-GRAY2);
+}
+
+.weeklyPopUp .weeklyPopUpBody {
+  width: 100%;
+}
+
+.weeklyPopUp .weeklyPopUpBody table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+.weeklyPopUp .weeklyPopUpBody table tr {
+  width: 100%;
+}
+
+.weeklyPopUp .weeklyPopUpBody table th {
+  font-weight: 600;
+  color: var(--COL-GRAY6);
+}
+
+.weeklyPopUp .weeklyPopUpBody table tr th,
+.weeklyPopUp .weeklyPopUpBody table tr td {
+  padding: 12px 8px;
+  border: 1px solid var(--COL-GRAY2);
+  border-right: none;
+  border-bottom: none;
+  text-align: center;
+}
+
+.weeklyPopUp .weeklyPopUpBody table tr th:last-child,
+.weeklyPopUp .weeklyPopUpBody table tr td:last-child {
+  border-right: 1px solid var(--COL-GRAY2);
+}
+
+.weeklyPopUp .weeklyPopUpBody table tr:last-child td {
+  border-bottom: 1px solid var(--COL-GRAY2);
+}
+
+.weeklyPopUp .weeklyPopUpFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  gap: 8px;
+}

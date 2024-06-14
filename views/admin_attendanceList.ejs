@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/attendanceList.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
+          <div id="attendanceList">
+            <div class="headerWrap">
+              <div class="title">출석 현황</div>
+              <div class="funcWrap">
+                <select class="sm" name="p">
+                  <option value="day" selected>일</option>
+                  <option value="week">주</option>
+                  <option value="month">월</option>
+                </select>
+                <input type="date" />
+                <input type="week" />
+                <input type="month" />
+                <button class="btn">현황 출력</button>
+              </div>
+            </div>
+            <div class="bodyWrap">
+              <div class="listWrap">
+                <div class="indexWrap">
+                  <div class="index studentId">학번</div>
+                  <div class="index name">이름</div>
+                  <div class="index date"></div>
+                </div>
+                <div class="itemWrap">
+                  <div class="colWrap">
+                    <div class="item studentId"></div>
+                  </div>
+                  <div class="colWrap">
+                    <div class="item name"></div>
+                  </div>
+                  <div class="colWrap">
+                    <div class="item date">
+                      <strong></strong>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div id="loadItemWrap">
+                  <div class="barWrap">
+                    <div class="bar"></div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

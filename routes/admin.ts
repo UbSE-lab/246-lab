@@ -66,7 +66,7 @@ router.get(
     res: express.Response,
     next: express.NextFunction
   ) => {
-    res.render("header", {});
+    res.render("admin_summary", {});
   }
 );
 
@@ -81,5 +81,35 @@ router.get(
     res.render("admin_student_list", {});
   }
 );
+
+// 경고 목록 페이지
+router.get(
+  "/alert",
+  async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    res.render("admin_alert_list", {});
+  }
+);
+
+// 출석 현황 페이지
+router.get(
+  "/attendanceList",
+  async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    res.render("admin_attendanceList", {});
+  }
+);
+
+// 주차별 출석 현황 페이지
+
+// 실시간 출석 현황 페이지
+
+// 출석 상세 페이지
 
 export default router;

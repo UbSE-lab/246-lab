@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/summary.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
+
+          <div id="contentWrap">
+            <div id="summary">
+              <div class="sectionWrap">
+                <div class="section studentSection">
+                  <div class="sectionHeader">
+                    <div class="sectionTitle">연구원 관리</div>
+                    <div class="linkBtn">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                  <div class="sectionBody">
+                    <div class="item all">
+                      <div class="value"></div>
+                      <div class="key">전체</div>
+                    </div>
+                    <div class="item able">
+                      <div class="value"></div>
+                      <div class="key">사용중</div>
+                    </div>
+                    <div class="item disable">
+                      <div class="value"></div>
+                      <div class="key">사용불가</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section alertSection">
+                  <div class="sectionHeader">
+                    <div class="sectionTitle">경고 관리</div>
+                    <div class="linkBtn">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                  <div class="sectionBody">
+                    <div class="item all">
+                      <div class="value"></div>
+                      <div class="key">2회 이상</div>
+                    </div>
+                    <div class="item able">
+                      <div class="value"></div>
+                      <div class="key">1회</div>
+                    </div>
+                    <div class="item disable">
+                      <div class="value"></div>
+                      <div class="key">0회</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section realtimeSection">
+                  <div class="sectionHeader">
+                    <div class="sectionTitle">실시간 출석 관리</div>
+                    <div class="linkBtn">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                  <div class="sectionBody">
+                    <div class="item in">
+                      <div class="value"></div>
+                      <div class="key">입실</div>
+                    </div>
+                    <div class="item out">
+                      <div class="value"></div>
+                      <div class="key">퇴실</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sectionWrap">
+                <div class="section section-lg graphSection">
+                  <div class="sectionHeader">
+                    <div class="sectionTitle">출석 현황</div>
+                    <div class="linkBtn">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                  <div class="sectionBody">
+                    <!-- 그래프 컴포넌트 자리 -->
+                  </div>
+                </div>
+              </div>
+              <!-- 로딩 컴포넌트 자리 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
-        <link rel="stylesheet" href="/stylesheets/root.css" />
-        <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
-        <link rel="stylesheet" href="/stylesheets/header.css" />
-    </head>
-    <body>
-        <div id="rootLayout">
-            <div id="headerWrap"><%- include ('header') %></div>
-            <div id="layoutWrap">
-                <div id="layout">
-                    <div class="sideWrap"><%- include ('sidebar') %></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
 
-                    <div id="contentWrap">
-                        <div id="studentList">
-                            <div class="title">연구원 목록(0명)</div>
-                            <div class="fucnWrap">
-                                <select>
-                                    <option selected value="all">전체</option>
-                                    <option value="able">사용</option>
-                                    <option value="disable">미사용</option>
-                                </select>
-                                <button class="btn">연구원추가</button>
-                            </div>
-                            <div class="bodyWrap">
-                                <div class="listWrap">
-                                    <div class="indexWrap">
-                                        <div class="index studentId">학번</div>
-                                        <div class="index name">이름</div>
-                                        <div class="index lab">연구소</div>
-                                        <div class="index seat">좌석번호</div>
-                                        <div class="index alert">경고</div>
-                                        <div class="index state">상태</div>
-                                        <div class="index update">수정</div>
-                                        <div class="index delete">삭제</div>
-                                    </div>
-                                    <div class="noItem">No items available</div>
-                                </div>
-                            </div>
-                            <div class="popupWrap">
-                                <!-- Popup placeholders -->
-                            </div>
-                        </div>
-                    </div>
+          <div id="contentWrap">
+            <div id="studentList">
+              <div class="title">연구원 목록(0명)</div>
+              <div class="fucnWrap">
+                <select>
+                  <option selected value="all">전체</option>
+                  <option value="able">사용</option>
+                  <option value="disable">미사용</option>
+                </select>
+                <button class="btn">연구원추가</button>
+              </div>
+              <div class="bodyWrap">
+                <div class="listWrap">
+                  <div class="indexWrap">
+                    <div class="index studentId">학번</div>
+                    <div class="index name">이름</div>
+                    <div class="index lab">연구소</div>
+                    <div class="index seat">좌석번호</div>
+                    <div class="index alert">경고</div>
+                    <div class="index state">상태</div>
+                    <div class="index update">수정</div>
+                    <div class="index delete">삭제</div>
+                  </div>
+                  <div class="noItem">No items available</div>
                 </div>
+              </div>
+              <div class="popupWrap">
+                <!-- Popup placeholders -->
+              </div>
             </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
