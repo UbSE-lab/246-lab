@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/attendanceList.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
+
+          <div id="contentWrap">
+            <div id="attendanceList">
+              <div class="headerWrap">
+                <div class="title">출석 상세</div>
+                <div class="funcWrap">
+                  <select>
+                    <option selected>---- 연구원을 선택하세요 ----</option>
+                    <option value=""></option>
+                  </select>
+                  <input type="date" />
+                  <button class="btn">조회</button>
+                </div>
+              </div>
+              <div class="bodyWrap">
+                <div class="listWrap noMargin">
+                  <div class="indexWrap">
+                    <div class="index no">순번</div>
+                    <div class="index time">날짜</div>
+                    <div class="index time">시간</div>
+                  </div>
+                  <div class="itemWrap">
+                    <div class="item no"></div>
+                    <div class="item time"></div>
+                    <div class="item time"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

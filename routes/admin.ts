@@ -15,6 +15,8 @@ interface AdminValue {
  * 작성자 : 김강민
  */
 
+// --------------------------------------------------
+
 // 관리자 로그인 페이지
 router.get(
   "/admin",
@@ -57,6 +59,8 @@ router.post(
     }
   }
 );
+
+// --------------------------------------------------
 
 // 대시 보드 페이지
 router.get(
@@ -107,9 +111,51 @@ router.get(
 );
 
 // 주차별 출석 현황 페이지
+router.get(
+  "/attendanceList/week",
+  async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    res.render("admin_attendanceList_week", {});
+  }
+);
 
 // 실시간 출석 현황 페이지
+router.get(
+  "/attendanceList/realtime",
+  async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    res.render("admin_attendanceList_realtime", {});
+  }
+);
 
 // 출석 상세 페이지
+router.get(
+  "/attendanceList/detail",
+  async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    res.render("admin_attendanceList_detail", {});
+  }
+);
+
+// 화이트리스트 페이지
+router.get(
+  "/whiteList",
+  async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    res.render("whiteList", {});
+  }
+);
 
 export default router;

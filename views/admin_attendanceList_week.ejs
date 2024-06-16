@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/attendanceList.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
+
+          <div id="contentWrap">
+            <div id="attendanceList">
+              <div class="headerWrap">
+                <div class="title">주차별 출석 현황</div>
+                <div class="funcWrap">
+                  <input type="week" />
+                </div>
+              </div>
+              <div class="bodyWrap">
+                <div class="weeklyWrap">
+                  <div class="weeklyHeader">
+                    <h2>출석 시간 충족()</h2>
+                  </div>
+                  <div class="weeklyBody">
+                    <div class="weeklyItem">
+                      <div class="studentId">학번 <strong></strong></div>
+                      <div class="name">이름 <strong></strong></div>
+                      <div class="time">총 출석 시간 <strong></strong></div>
+                    </div>
+                  </div>
+                  <div class="weeklyHeader">
+                    <h2>출석 시간 미달()</h2>
+                  </div>
+                  <div class="weeklyBody">
+                    <div class="weeklyItem">
+                      <div class="studentId">학번 <strong></strong></div>
+                      <div class="name">이름 <strong></strong></div>
+                      <div class="time">총 출석 시간 <strong></strong></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="popUpWrap">
+                <div class="weeklyPopUp">
+                  <div class="weeklyPopUpHeader">
+                    <table>
+                      <tr>
+                        <td class="th">학번</td>
+                        <td></td>
+                        <td class="th">이름</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="th">기간</td>
+                        <td colspan="3"></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="weeklyPopUpBody">
+                    <h3>상세 정보</h3>
+                    <table>
+                      <tr>
+                        <th>날짜</th>
+                        <th>출석 시간</th>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="weeklyPopUpFooter">
+                    <button class="btn light">경고 부여</button>
+                    <button class="btn">닫기</button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

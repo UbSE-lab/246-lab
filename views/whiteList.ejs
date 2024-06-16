@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/whiteList.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
+
+          <div id="contentWrap">
+            <div id="whiteList">
+              <div class="headerWrap">
+                <div class="title">화이트리스트 목록</div>
+                <div class="funcWrap">
+                  <button class="btn">화이트리스트 추가</button>
+                </div>
+              </div>
+              <div class="bodyWrap">
+                <div class="listWrap">
+                  <div class="indexWrap">
+                    <div class="index ssid">SSID</div>
+                    <div class="index hex">HEX</div>
+                    <div class="index delete">삭제</div>
+                  </div>
+                  <div class="itemWrap">
+                    <div class="item ssid"></div>
+                    <div class="item hex"></div>
+                    <div class="item delete">
+                      <button class="btn btn-sm">삭제</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="popUpWrap"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

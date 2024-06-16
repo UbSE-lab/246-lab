@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/admin_student_list.css" />
+    <link rel="stylesheet" href="/stylesheets/root.css" />
+    <link rel="stylesheet" href="/stylesheets/rootlayout.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/attendanceList.css" />
+  </head>
+  <body>
+    <div id="rootLayout">
+      <div id="headerWrap"><%- include ('header') %></div>
+      <div id="layoutWrap">
+        <div id="layout">
+          <div class="sideWrap"><%- include ('sidebar') %></div>
+
+          <div id="contentWrap">
+            <div id="attendanceList">
+              <div class="headerWrap">
+                <div class="title">실시간 출석 현황</div>
+                <div class="funcWrap">
+                  <select>
+                    <option selected value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="bodyWrap">
+                <div class="listWrap">
+                  <!-- Loading or data component -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
